@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Supermercado+One" rel="stylesheet">
+
+		<style>
+
+			html {
+				overflow:hidden;
+			}
+
+			#header{
+				width: 100%;
+				height: 140px;
+				background-color: #006978;
+				position: absolute;
+				top: 0;
+				left: 0;			
+			}
+
+			#header > h1 {
+				display: block;
+				font-size: 50px;
+    			font-family: 'Open Sans Condensed', sans-serif;
+				color: #edcd65;
+				white-space: nowrap;
+				position: relative;
+				bottom: 25px;
+				left: 5%;
+				z-index: 5;				
+			}
+			
+			#content_container {
+				background-color: #c2d6d1;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 100px;
+				left: 0px;
+			}
+
+			#profile_container {
+				background-color: #0097a7;
+				width:100%;
+				height: 70%;
+				margin-top: 44px;
+				margin-bottom:20px;
+				overflow-y: scroll;
+			}
+
+			#footer {
+				width: 100%;
+				height: 59px;
+				background-color: #006978;
+				position: fixed;
+				bottom: 0px;
+				left: 0px;
+				box-sizing: border-box;
+			}
+
+			#footer > p {
+				font-family: 'Open Sans Condensed', sans-serif;
+				color: #edcd65;
+				font-size: 1.8em;
+				text-align: center;
+				overflow: hidden;
+				margin: 15px auto;
+			}
+
+			button {
+				width: 220px;
+				height: 70px;
+				background-color: #edcd65;
+				outline: none;
+				cursor: pointer;
+				text-align: center;
+				text-decoration: none;
+				font-family: 'Open Sans Condensed', sans-serif;
+				font-size: 23px;
+				color: black;
+				padding: 5px 20px;
+				border: solid 1px #0076a3;
+				
+			}
+
+			#login {
+				position: relative;
+				left: 580px;
+				top:408px;
+				
+			}
+
+
+			#indietro {
+				position: relative;
+				left: 640px;
+				top: 408px;
+			}
+
+			img {
+				position: absolute;
+				left: 250px;
+				top: 145px;
+			}
+
+			#testo_profilo {
+				position: absolute;
+				left: 580px;
+				top:70px;
+			}
+
+			h2 {
+				color: white;
+				font-family: 'Open Sans Condensed', sans-serif;
+				font-size: 2.5em;
+			}
+
+			p {
+				color: white;
+				font-family: 'Open Sans Condensed', sans-serif;
+				font-size: 2em;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<div id=header>
+			<h1>Serendipity Promenade: user profile</h1>
+		</div>
+
+
+		<div id=content_container>
+
+			<div id=profile_container>
+
+				<img id=donna_1 src="../static/immagini/serena.png">
+
+				<div id=testo_profilo>
+					<h2>Interessi di Serena</h2>
+					<p>Costume: tecnologia e innovazione<br><br>Cronaca: terremoti e disastri ambientali<br><br>Sport: basket</p>
+				</div>
+
+				<a href="/serena/ricerca"><button id=login>Login as Serena</button></a>
+				<a href="/"><button id=indietro>Choose another profile</button></a>
+			</div>
+		</div>
+
+		<div id=footer>
+			<p>Made by Marco Valzelli and Leonardo Dal Tio</p>
+		</div>
+
+	</body>
+
+</html>

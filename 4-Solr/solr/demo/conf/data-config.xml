@@ -1,0 +1,27 @@
+<dataConfig>
+<dataSource type="JdbcDataSource" 
+            driver="com.mysql.jdbc.Driver"
+            url="jdbc:mysql://localhost:3306/information_retrival" 
+            user="root" 
+            password="root"/>
+<document>
+  <entity name="tweets"  
+    pk="id"
+    query="SELECT id,tweet,favourite_count,retweet_count,screen_name,tweet_date,url,usable,article  from tweets WHERE usable=true and no_article=false"
+    deltaImportQuery="SELECT id,tweet,favourite_count,retweet_count,screen_name,tweet_date,url,usable  from tweets WHERE id='${dih.delta.id}'"
+    deltaQuery="SELECT id FROM products  WHERE updated_at > '${dih.last_index_time}'"
+    >
+  <field column="id" name="id"/>
+  
+  <field column="tweet" name="tweet" />
+  <field column="favourite_count" name="favourite_count" />
+  <field column="retweet_count" name="retweet_count" />
+
+  <field column="screen_name" name="screen_name" />
+  <field column="tweet_date" name="tweet_date"/>
+  <field column="url" name="url"/>
+  <field column="usable" name="usable"/>      
+  <field column="article" name="article"/>    
+  </entity>
+</document>
+</dataConfig>

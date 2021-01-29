@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Supermercado+One" rel="stylesheet"> 
+
+		<style>
+
+
+			/*GENERALI*/
+			html, body {
+				overflow-x: hidden;
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				border: 0;
+				background-color:#c2d6d1;
+			}
+
+
+			/*HEADER*/
+			#header{
+				width: 100%;
+				height: 100px;
+				background-color: #006978;
+				position: absolute;
+				top: 0;
+				left: 0;			
+			}
+
+			#header > h1 {
+				
+				font-size: 50px;
+    			font-family: 'Open Sans Condensed', sans-serif;
+				color: #edcd65;
+				white-space: nowrap;
+				position: relative;
+				left: 5%;
+				bottom: 25px;			
+			}
+
+			#header > h1 > a {
+				text-decoration: none;
+				color: #edcd65;
+				font-size: 50px;
+    			font-family: 'Open Sans Condensed', sans-serif;
+				
+						
+			}
+
+			img {
+				
+				height: 85px;
+				width: auto;
+				position: absolute;
+				top: 16px;
+				right: 18%;
+				/*top: -142px;
+				left: 1160px;*/	
+			}
+
+			#header > p {
+				font-family: 'Open Sans Condensed', sans-serif;
+				color: #edcd65;
+				position: absolute;
+				top: 18px;
+				right: 13%;
+				font-size: 20px;
+			}
+
+			/*MAIN CONTENT*/
+
+			#main_content {
+				background-color: #c2d6d1;
+				width: 100%;
+				min-height:1000px;
+			}
+
+			/*PRIMA BARRA DI RICERCA*/
+
+			#tool_ricerca {
+				width: 100%;
+				height: 110px;
+				background-color: #0097a7;
+				position: absolute;
+				top: 100px;
+			}
+
+			select {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -370px;
+				margin-top: -20px;
+				/*position: fixed;
+				left: 25%;
+				top: 19%;*/
+				font-family: 'Open Sans Condensed', sans-serif;
+				font-size: 25px;
+				padding: 5px;
+				cursor: pointer;
+			}
+
+			label[for=box_interessi] {
+    			position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -370px;
+				margin-top: -50px;
+				/*position: fixed;
+				left: 25%;
+				top: 15%;*/
+				font-family: 'Open Sans Condensed', sans-serif;
+				color: #edcd65;
+				font-size: 24px;
+    		}
+
+			input {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-top: -24px;
+				margin-left: -200px;
+				/*position: fixed;
+				top:18.4%;
+				left: 50%;
+				margin-left: -200px;*/
+				width: 400px;
+				height: 40px;
+				font-family: 'Open Sans Condensed', sans-serif;
+				font-size: 28px;
+				border: 3px solid #edcd65;
+    			border-radius: 4px;
+    			padding: 5px;
+    		}
+
+
+    		input[type=submit] {
+    			position: absolute;
+    			margin-top: -23px;
+    			margin-left: 235px;
+    			/*position: fixed;
+    			top:28%;
+				left: 50%;
+				margin-left: -105px;*/
+    			width: 210px;
+    			height: 50px;
+    			border: none;
+    			background-color: #edcd65;
+    			cursor: pointer;
+    			text-align: center;
+    		}
+
+
+    		/*CONTROLLI EXTRA*/
+    		#controlli_extra {
+    			width: 100%;
+    			background-color:#0097a7;
+    			width: 100%;
+    			height: 50px;
+    			border-top: 6px solid #c2d6d1;  			
+    			position: absolute;
+    			top:100px;
+    		}
+
+    		
+    		#domanda {
+				font-family: 'Open Sans Condensed', sans-serif;
+				color: #edcd65;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -370px;
+				margin-top: -18px;	
+			}
+
+			
+			#entrambe {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -200px;
+				margin-top: -8px;
+				height: 20px;
+				width: 20px;
+			}
+
+			label[for=entrambe] {
+				font-family: 'Open Sans Condensed', sans-serif;
+				color: white;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -175px;
+				margin-top: -18px;
+				font-size: 24px;
+			}
+
+			#data {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: 25px;
+				margin-top: -8px;
+				font-size: 24px;
+				height: 20px;
+				width: 20px;
+			}
+
+			label[for=data] {
+				font-family: 'Open Sans Condensed', sans-serif;
+				color: white;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: 50px;
+				margin-top: -18px;
+				font-size: 24px;
+			}
+
+			#popolarita {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: 170px;
+				margin-top: -8px;
+				height: 20px;
+				width: 20px;
+			}
+
+			label[for=popolarita] {
+				font-family: 'Open Sans Condensed', sans-serif;
+				color: white;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: 195px;
+				margin-top: -18px;
+				font-size: 24px;
+			}
+
+			#nessuna {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: 335px;
+				margin-top: -8px;
+				height: 20px;
+				width: 20px;
+			}
+
+			label[for=nessuna] {
+				font-family: 'Open Sans Condensed', sans-serif;
+				color: white;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: 360px;
+				margin-top: -18px;
+				font-size: 24px;
+			}
+
+    		/*FOOTER*/
+    		#footer {
+				width: 100%;
+				height: 59px;
+				background-color: #006978;
+				position: relative;
+				bottom: 0px;
+				left: 0px;
+				box-sizing: border-box;
+				overflow: hidden;
+			}
+
+			#footer > p {
+				font-family: 'Open Sans Condensed', sans-serif;
+				color: #edcd65;
+				font-size: 1.8em;
+				text-align: center;
+				overflow: hidden;
+				margin: 15px auto;
+			}
+
+			
+			/*POST PREVIEW*/
+			hr {
+				height: 3px;
+				background-color: #0097a7; 
+				border: none;
+			}
+
+			#risultati {
+				margin-top: 280px
+			}
+
+			.link_risultati {
+				text-decoration: none;
+				font-family: 'Open Sans Condensed', sans-serif;
+				color: #006978;
+			}
+
+			.post-meta {
+				text-decoration: none;
+				font-family: 'Open Sans Condensed', sans-serif;
+				color: #0097a7;
+			}
+
+			.post-preview {
+
+				padding: 0 10%;
+			}
+
+
+
+		</style>
+
+
+
+	</head>
+
+	<body>
+
+		<div id=header>
+			<h1><a href="/">Serendipity Promenade: search</a></h1>
+			<img src="../../static/immagini/{{ user }}.png">
+			<p>Logged<br>as {{ user }}</p>
+		</div>
+
+		<div id=main_content>
+
+			<div id=tool_ricerca>
+
+				<form action="/{{ user }}/ricerca" method="post">
+					<label for=box_interessi>Interests</label>
+  					<select name=box_interessi id=box_interessi>
+   						<option value="" selected="selected">Nessuno</option>
+		                {% for t in topic%}
+		                <option value="{{ t }}"> {{t}}</option>
+		                {%endfor%}
+   					</select>
+
+   					<input name="query" placeholder="Enter your query...">
+   					<input type=submit value=submit>
+
+   					<div id=controlli_extra>
+
+
+	   					<h2 id=domanda>Do you care about:</h2>
+
+	   					
+
+	   					<label for=data>only recency</label>
+	   					<input type=radio name=boost value=recency id=popolarita>
+
+	   					<label for=popolarita>only popularity</label>
+	   					<input type=radio name=boost value=popularity id=entrambe>
+
+	   					<label for=nessuna>serendipity</label>
+	   					<input type=radio name=boost value=nessuna id=nessuna checked="checked">
+						
+	   				</div>
+
+				</form> 
+
+			</div>
+			<div id=risultati>
+				{% for i in result %}
+	          	<div class="post-preview">
+	            	<a class=link_risultati href="{{ i[3] }}">
+	             	 <h2 class="post-title">
+	                {{ i[0] }}
+	              	</h2>
+	              	<h3 class="post-subtitle">
+	               	{{ i[4] }}
+	              	</h3>
+	            	</a>
+	            	<p class="post-meta">Posted by
+	              	<a class= link_risultati href="{{ i[3] }}">{{ i[2] }}</a>
+	              	on {{ i[1] }}.   Like:{{ i[5] }} </p>
+	          </div>
+	          <hr>
+	          {% endfor %}
+	        </div>
+
+		</div>
+		
+		<div id=footer>
+			<p>Made by Marco Valzelli and Leonardo Dal Tio</p>
+		</div>
+
+	</body>
+
+</html>
+
+

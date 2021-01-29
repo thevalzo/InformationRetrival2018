@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Supermercado+One" rel="stylesheet"> 
+
+
+		<style>
+
+			html {
+				overflow-x: hidden;
+			}
+
+			#header{
+				width: 100%;
+				height: 140px;
+				background-color: #006978;
+				position: absolute;
+				top: 0;
+				left: 0;			
+			}
+
+			#header > h1 {
+				display: block;
+				font-size: 50px;
+    			font-family: 'Open Sans Condensed', sans-serif;
+				color: #edcd65;
+				white-space: nowrap;
+				position: relative;
+				bottom: 25px;
+				left: 5%;
+				z-index: 5;				
+			}
+
+			#login_container {
+				background-color: #c2d6d1;
+				width: 100%;
+				height: 80%;
+				position: absolute;
+				top: 100px;
+				left: 0px;
+				overflow-y: scroll;
+			}
+
+			#prima_riga > .login_block {
+				width: 20%;
+				height:270px;
+				float: left;
+				background-color: #0097a7;
+				margin-top: 40px;
+				box-sizing: border-box;
+				border-style: solid;
+    			border-width: 4px;
+    			border-color: #c2d6d1;
+			}
+
+			
+
+			#seconda_riga > .login_block{
+				width: 20%;
+				height: 270px;
+				float: left;
+				background-color: #0097a7;
+				box-sizing: border-box;
+				border-style: solid;
+    			border-width: 4px;
+    			border-color: #c2d6d1;
+			}
+
+			.login_block > img:hover {
+				cursor: pointer;
+			}
+
+			.login_block > p:hover {
+				cursor: pointer;
+			}
+
+			#footer {
+				width: 100%;
+				height: 59px;
+				background-color: #006978;
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+				box-sizing: border-box;
+				overflow: hidden;
+			}
+
+			#footer > p {
+				font-family: 'Open Sans Condensed', sans-serif;
+				color: #edcd65;
+				font-size: 1.8em;
+				text-align: center;
+				overflow: hidden;
+				margin: 15px auto;
+			}
+
+			img {
+			    display: block;
+				margin: 30px auto;
+				text-align: center;
+				width: 120px;
+				height: auto;
+				position: relative;
+				bottom: 15px; 
+			}
+
+			.nomi {
+				font-family: 'Open Sans Condensed', sans-serif;
+				color: white;
+				font-size: 1.9em;
+				text-align: center;
+				position: relative;
+				bottom: 40px;
+			}
+
+			a {
+				text-decoration: none
+			}
+			
+		</style>
+
+	</head>
+
+	<body>
+
+		<div id=header>
+			<h1>Serendipity Promenade: user login</h1>
+		</div>
+
+		<div id=login_container>
+
+			<div id=prima_riga>
+
+				<div class=login_block>
+					<a href=profili/lucia><img id=donna_1 src="../static/immagini/lucia.png"></a>
+					<a href=profili/lucia><p class=nomi>Lucia</p></a>
+				</div>
+
+				<div class=login_block>
+					<a href=profili/federico><img id=donna_1 src="../static/immagini/federico.png"></a>
+					<a href=profili/federico><p class=nomi>Federico</p></a>
+				</div>
+
+				<div class=login_block>
+					<a href=profili/elisabetta><img id=donna_1 src="../static/immagini/elisabetta.png"></a>
+					<a href=profili/elisabetta><p class=nomi>Elisabetta</p></a>
+				</div>
+
+				<div class=login_block>
+					<a href=profili/marco><img id=donna_1 src="../static/immagini/marco.png"></a>
+					<a href=profili/marco><p class=nomi>Marco</p></a>
+				</div>
+
+				<div class=login_block>
+					<a href=profili/isabella><img id=donna_1 src="../static/immagini/isabella.png"></a>
+					<a href=profili/isabella><p class=nomi>Isabella</p></a>
+				</div>
+
+			</div>
+
+			<div id=seconda_riga>
+
+				<div class=login_block>
+					<a href=profili/calvin><img id=donna_1 src="../static/immagini/calvin.png"></a>
+					<a href=profili/calvin><p class=nomi>Calvin</p></a>
+				</div>
+
+				<div class=login_block>
+					<a href=profili/giulia><img id=donna_1 src="../static/immagini/giulia.png"></a>
+					<a href=profili/giulia><p class=nomi>Giulia</p></a>
+				</div>
+
+				<div class=login_block>
+					<a href=profili/massimo><img id=donna_1 src="../static/immagini/massimo.png"></a>
+					<a href=profili/massimo><p class=nomi>Massimo</p></a>
+				</div>
+
+				<div class=login_block>
+					<a href=profili/serena><img id=donna_1 src="../static/immagini/serena.png"></a>
+					<a href=profili/serena><p class=nomi>Serena</p></a>
+				</div>
+
+				<div class=login_block>
+					<a href=profili/tom><img id=donna_1 src="../static/immagini/tom.png"></a>
+					<a href=profili/tom><p class=nomi>Tom</p></a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id=footer>
+			<p>Made by Marco Valzelli and Leonardo Dal Tio</p>
+		</div>
+
+	</body>
+
+</html>
